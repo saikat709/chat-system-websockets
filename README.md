@@ -28,7 +28,7 @@ python -m websockets ws://localhost:8001/
 
 ### Visualization:
 Branch 1: **send_receive**  - Full Setup ( But play from single laptop )
-[![Video That shows the first Step code result.](https://github.com/saikat709/chat-system-websockets/blob/main/github_readme_assets/c4.png?raw=true)](https://github.com/saikat709/react-django-crud-application/blob/main/github_readme_assets/sr_1.webm?raw=true)
+[![Video That shows the first Step code result.](https://github.com/saikat709/chat-system-websockets/blob/main/github_readme_assets/c4.png?raw=true)](https://github.com/saikat709/chat-system-websockets/blob/main/github_readme_assets/sr_1.webm?raw=true)
 
 
 # About app.py

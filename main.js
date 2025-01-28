@@ -13,6 +13,7 @@ function receiveMoves(board, websocket) {
         playMove(board, event.player, event.column, event.row);
         break;
       case "win":
+        playMove(board, event.player, event.column, event.row);
         showMessage(`Player ${event.player} wins!`);
         // No further messages are expected; close the WebSocket connection.
         websocket.close(1000);
@@ -29,12 +30,11 @@ function receiveMoves(board, websocket) {
 function sendMoves(board, websocket) {
   // When clicking a column, send a "play" event for a move in that column.
   board.addEventListener("click", async ({ target }) => {
-    // console.log("###", target.dataset.column );
+    console.log("###", target.dataset.column );
     const column = target.dataset.column;
-    console.log(column);
     // Ignore clicks outside a column.
     if (column === undefined) {
-      console.log("###", target.dataset.column );
+      console.log( target.dataset.column );
       return;
     }
     const event = {

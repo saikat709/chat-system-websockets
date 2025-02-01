@@ -83,7 +83,9 @@ async def handler(websocket):
             await websocket.send(json.dumps({
                 'type': 'win',
                 'player' : game.winner,
-            }));
+                'column': column,
+                'row' : row
+            }))
 
         await websocket.send(json.dumps({
             'type': 'play',
